@@ -1,0 +1,40 @@
+.container{
+    min-height: 100vh;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-auto-rows: minmax(100px,auto);
+
+    grid-template-areas: 
+    "header header header"
+    "left main side"
+    "footer footer footer";
+    gap: 5px;
+}
+
+header{
+    background-color: azure;
+    grid-area: header;
+    text-align: center;
+    color: tomato;
+}
+
+footer{
+    background-color: blue;
+    grid-area: footer;
+}
+
+main{
+    background-color: brown;
+    grid-area: main;
+}
+aside{
+    background-color: chocolate;
+    grid-area: side;
+}
+
+#left{
+    grid-area: left;
+    background-color: yellowgreen;
+}
